@@ -1,4 +1,4 @@
-package com.beaiteam.project1beai.entities;
+package com.example.giswebservice.entities;
 
 import lombok.Data;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
