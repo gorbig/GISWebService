@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Test</h1>
+
+    <div id="map"></div>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        function initMap() {
+            // The location of the map
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: shop });
+        }
+        /*]]>*/
+    </script>
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfObxTmMX5FhKclsn6cwMt5AOtyX0S_Pg&callback=initMap">
+    </script>
+</body>
+</html>
