@@ -17,6 +17,8 @@ public class SecurityConfiguration {
         http.httpBasic().and().authorizeRequests()
                 .antMatchers("/css/**", "/js/**").permitAll()
                 .antMatchers("/").permitAll()
+                .antMatchers("/parse/**").permitAll()
+                .antMatchers("/products/**").permitAll()
                 .and().csrf().disable();
 
         return http.build();
